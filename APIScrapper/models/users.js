@@ -1,0 +1,41 @@
+ var mongoose = require('mongoose');
+
+ var userSchema = new mongoose.Schema({
+     id: { type: Number },
+     name: { type: String },
+     username: { type: String },
+     password: { type: String },
+     email: { type: String },
+     mobile: { type: String },
+     telp: { type: String },
+     website: { type: String },
+     address: { type: String },
+     description: { type: String },
+     postal_code: { type: String },
+     status: { type: Number },
+     scale: { type: String },
+     premium: { type: Number },
+     premium_s_date: { type: Date },
+     premium_e_date: { type: Date },
+     photo_profile: { type: String },
+     cover_photo: { type: String },
+     confirmation_code: { type: String },
+     reset_password_token: { type: String },
+     created_at: { type: Date },
+     updated_at: { type: Date },
+     level: { type: String },
+     sub_district_id: { type: Number },
+     district_id: { type: Number },
+     province_id: { type: Number },
+     remember_token: { type: String },
+     is_deleted: { type: Number },
+     last_login: { type: Date },
+     userUserName: { type: String },
+     userCreatedAt: { type: Date },
+     userId: { type: Number },
+     districtName: { type: String },
+     subDistrictName: { type: String },
+     provinceName: { type: String }
+ });
+
+ mongoose.model("User", userSchema);
